@@ -2,14 +2,14 @@
 
 <h1>Tsueets</h1>
 
+<div class="mb-4">
+  <%= turbo_frame_tag 'new_tsueet', src: new_tsueet_path %>
+</div>
+
 <div id="tsueets">
-  <%# TODO: あとで降順にする %>
   <% @tsueets.each do |tsueet| %>
     <div class="mb-4">
       <%= render tsueet %>
     </div>
   <% end %>
 </div>
-
-<%# TODO: あとでページ上に移動する %>
-<%= turbo_frame_tag 'new_tsueet', src: new_tsueet_path %>
