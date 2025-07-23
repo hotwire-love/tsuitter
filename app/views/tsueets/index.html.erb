@@ -8,7 +8,6 @@
 <div id="tsueets">
   <% @tsueets.each do |tsueet| %>
     <div class="mb-4">
-      <%= turbo_stream_from tsueet %>
       <%= render tsueet %>
     </div>
   <% end %>
