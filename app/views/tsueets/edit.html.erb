@@ -1,0 +1,12 @@
+<% content_for :title, "Editing tsueet" %>
+
+<h1>Editing tsueet</h1>
+
+<%= render "form", tsueet: @tsueet %>
+
+<br>
+
+<div>
+  <%= link_to "Show this tsueet", @tsueet %> |
+  <%= link_to "Back to tsueets", tsueets_path %>
+</div>

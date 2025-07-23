@@ -1,0 +1,13 @@
+<% content_for :title, "New tsueet" %>
+
+<h1>New tsueet</h1>
+
+<%= turbo_frame_tag 'new_tsueet' do %>
+  <%= render "form", tsueet: @tsueet %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Back to tsueets", tsueets_path %>
+</div>

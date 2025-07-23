@@ -1,0 +1,14 @@
+<% content_for :title, "Tsueets" %>
+<%= turbo_stream_from 'tsueets' %>
+
+<div class="mb-4">
+  <%= render 'form', tsueet: @tsueet %>
+</div>
+
+<div id="tsueets">
+  <% @tsueets.each do |tsueet| %>
+    <div class="mb-4">
+      <%= render tsueet %>
+    </div>
+  <% end %>
+</div>
