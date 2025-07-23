@@ -4,6 +4,7 @@ class TsueetsController < ApplicationController
   # GET /tsueets
   def index
     @tsueets = Tsueet.order(id: :desc)
+    @tsueet = Tsueet.new
   end
 
   # GET /tsueets/1

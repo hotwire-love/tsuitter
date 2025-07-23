@@ -1,7 +1,7 @@
 <% content_for :title, "Tsueets" %>
 
 <div class="mb-4">
-  <%= turbo_frame_tag 'new_tsueet', src: new_tsueet_path %>
+  <%= render 'form', tsueet: @tsueet %>
 </div>
 
 <div id="tsueets">
